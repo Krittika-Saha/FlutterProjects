@@ -4,15 +4,16 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-          backgroundColor: Colors.orange[200],
+          backgroundColor: Colors.brown[200],
           body: Center(
             child: Image(
-              image: AssetImage('images/diya.jpg'),
+              image: AssetImage('images/rock.png'),
             ),
           ),
           appBar: AppBar(
-            backgroundColor: Colors.orange[900],
-            title: Text('Happy Diwali!'),
+            backgroundColor: Colors.brown[900],
+            title: Center(
+                child: Text('I Am Poor :C')),
           )),
     ),
   );

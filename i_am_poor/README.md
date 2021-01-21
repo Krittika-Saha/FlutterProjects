@@ -1,6 +1,6 @@
-# happy_diwali
+# i_am_poor
 
-Spreading diwali cheers
+I am poor challenge
 
 ## Getting Started
 
