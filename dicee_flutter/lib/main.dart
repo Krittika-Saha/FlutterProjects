@@ -10,7 +10,7 @@ void main() {
           title: Center(
             child: Text('Dicee'),
           ),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.red[600],
         ),
         body: DicePage(),
       ),
