@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 void main() {
-  return runApp(
-    MaterialApp(
+  return runApp(BallPage());
+}
+
+class BallPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.lightBlue,
         appBar: AppBar(
@@ -12,19 +17,21 @@ void main() {
           ),
           backgroundColor: Colors.blue,
         ),
-        body: BallPage(),
+        body: Ball(),
       ),
-    ),
-  );
-}
-class BallPage extends StatefulWidget {
-  @override
-  _BallPageState createState() => _BallPageState();
-}
-
-class _BallPageState extends State<BallPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
+    );
   }
 }
+class Ball extends StatefulWidget {
+  @override
+  _BallState createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Image.asset('images/ball1.png'),);
+  }
+}
+
+
